@@ -15,6 +15,9 @@ while is_on:
     user_choice = input(f"What would you like? ({menu_items.get_items()}): ").lower()
     if user_choice == "off":
         is_on = False
+    elif user_choice == "report":
+        coffee_machine.report()
+        money_machine.report()
     elif user_choice == staff.employer or user_choice == staff.employee:
         staff.refil_resources(coffee_machine)
         print("Would you like to end the machine?")

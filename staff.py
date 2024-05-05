@@ -5,7 +5,6 @@ class Staff:
     def __init__(self) -> None:
         self.employer = "employer"
         self.employee = "employee"
-        self.ingredients
     
     def refil_resources(self, resources_obj):
             """Refils the machine"""
